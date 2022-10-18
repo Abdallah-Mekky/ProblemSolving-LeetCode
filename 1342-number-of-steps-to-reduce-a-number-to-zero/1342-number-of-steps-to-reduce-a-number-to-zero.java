@@ -6,14 +6,14 @@ class Solution {
         while(num != 0){
                if(num % 2 == 0){
                 
-                num /= 2;
-                counterOfSteps++;
+                num /= 2;   
             }
-            else if(num % 2 == 1){
-                
+            else{ 
                 num -= 1;
-                counterOfSteps++;
+               
             }
+            
+            counterOfSteps++;
             
         }
            
