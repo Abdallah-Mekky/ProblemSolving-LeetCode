@@ -10,8 +10,19 @@
  */
 class Solution {
     public ListNode middleNode(ListNode head) {
+        
+        ListNode middleNode = head;
+        ListNode endNode = head;
+        
+        while(endNode != null && endNode.next != null){
+            
+            middleNode = middleNode.next;
+            endNode = endNode.next.next;
+        }
+        
+        return middleNode;
        
-      ArrayList<ListNode> myList = new ArrayList<>();
+      /*ArrayList<ListNode> myList = new ArrayList<>();
         
         while(head != null){
             
@@ -20,6 +31,6 @@ class Solution {
         }
         
     
-        return myList.get((myList.size()/2));
+        return myList.get((myList.size()/2)); */
     }
 }
