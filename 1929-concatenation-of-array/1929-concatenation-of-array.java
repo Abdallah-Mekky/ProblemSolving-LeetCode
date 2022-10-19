@@ -1,18 +1,20 @@
 class Solution {
     public int[] getConcatenation(int[] nums) {
         
-     int [] doubleArray = new int[(nums.length)*2];
-        int counter=0;
-            for(int i = 0 ; i <nums.length ; i++){
-               doubleArray[i]=nums[i] ;
-                counter++;
-
-            }
-             for(int i = 0 ; i <nums.length ; i++){
-               doubleArray[counter]=nums[i] ;
-                 counter++;
-            }
+      int [] answer = new int[(2*nums.length)];
+      int counter = 0 ;
         
-        return doubleArray;
+        for(int i = 0 ;i<answer.length;i++){
+            
+            if( counter == nums.length  ){
+                
+                counter = 0;
+            }
+            
+            answer[i] = nums[counter];
+            counter++;
+        }
+        
+        return answer;
     }
 }
