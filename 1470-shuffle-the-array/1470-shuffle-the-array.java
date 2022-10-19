@@ -21,20 +21,6 @@ class Solution {
             countY++;
         }
         
-        
-        
-        
-        
-        
-        /*for(int i=1;i<nums.length ;i++){
-            
-            int temp = nums[i +1];
-            
-            nums[i +1] = nums[i];
-            
-            nums[i + 2] = temp;
-        }*/
-        
         return shuffle;
     }
 }
