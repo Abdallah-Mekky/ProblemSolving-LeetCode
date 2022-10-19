@@ -3,14 +3,10 @@ class Solution {
         
       int [] answer = new int[(2*nums.length)];
         
-       // answer = Arrays.copyOf(nums,nums.length);
-        
-       // int size = answer.length/2;
         int counter = 0 ;
         
         for(int i = 0 ;i<answer.length;i++){
-            
-            
+        
             
             if( counter == nums.length  ){
                 
@@ -20,9 +16,6 @@ class Solution {
             answer[i] = nums[counter];
             counter++;
         }
-        
-        
-       
         
         return answer;
     }
