@@ -32,9 +32,7 @@ class Solution {
             
             return finalMax;
         }
-        
-        
-        
+                
        return -1;
         
         
