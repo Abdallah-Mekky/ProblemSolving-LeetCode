@@ -10,12 +10,16 @@ class Solution {
             
             for(int j=0;j<nums.length;j++){
                 
-                if( nums[j] == (-nums[i]) && nums[j] > maxNumber ){
+                if( nums[j] == (-nums[i])){
+                    
+                   if(nums[j] > maxNumber ){
                     
                     maxNumber = nums[j];
                     myMaxNumbers.add(maxNumber);
                     
+                }  
                 }
+                   
             }
             
         }
