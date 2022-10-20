@@ -35,11 +35,6 @@ class Solution {
                 finalMax = myMaxNumbers.get(i);
             }
         }
-            
-            
-            
-            
-        
         
         if(finalMax > 0){
             
