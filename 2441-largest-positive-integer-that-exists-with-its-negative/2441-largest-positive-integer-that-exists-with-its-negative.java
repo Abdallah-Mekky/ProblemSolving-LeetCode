@@ -1,11 +1,10 @@
 class Solution {
     public int findMaxK(int[] nums) {
         
-        int maxNumber = Integer.MIN_VALUE;
+        int maxNumber = 0;
         ArrayList<Integer> myMaxNumbers = new ArrayList<Integer>();
-        int finalMax = Integer.MIN_VALUE;
-       // int [] myMax = new int[nums.length];
-        
+        int finalMax = 0;
+      
         
         for(int i =0;i<nums.length;i++){
             
