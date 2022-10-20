@@ -8,13 +8,9 @@ class Solution {
         
         for(int i =0;i<nums.length;i++){
             
-           /* if(nums[i] > maxNumber){
-                maxNumber = nums[i];
-            }*/
-           
             for(int j=0;j<nums.length;j++){
                 
-                if( nums[j] == (-1 * nums[i]) && nums[j] > maxNumber ){
+                if( nums[j] == (-nums[i]) && nums[j] > maxNumber ){
                     
                     maxNumber = nums[j];
                     myMaxNumbers.add(maxNumber);
@@ -23,10 +19,7 @@ class Solution {
             }
             
         }
-        
-        
-        
-        
+         
         for(int i=0;i<myMaxNumbers.size();i++){
             
             if(myMaxNumbers.get(i) > finalMax ){
