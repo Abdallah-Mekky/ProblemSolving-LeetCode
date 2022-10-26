@@ -5,7 +5,7 @@ class Solution {
         
         for(int i =0;i<sentences.length;i++){
             
-            if(sentences[i].split("\\s").length > maximumNumberOfWords){
+            if(sentences[i].split(" ").length > maximumNumberOfWords){
                 
                maximumNumberOfWords =  sentences[i].split("\\s").length;
             }
