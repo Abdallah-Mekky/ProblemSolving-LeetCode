@@ -7,7 +7,7 @@ class Solution {
             
             if(sentences[i].split(" ").length > maximumNumberOfWords){
                 
-               maximumNumberOfWords =  sentences[i].split("\\s").length;
+               maximumNumberOfWords =  sentences[i].split(" ").length;
             }
         }
         
