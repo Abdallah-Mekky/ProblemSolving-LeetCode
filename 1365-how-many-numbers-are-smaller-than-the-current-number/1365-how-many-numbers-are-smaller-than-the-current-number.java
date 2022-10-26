@@ -1,7 +1,10 @@
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
     
-        /*ArrayList<Integer> tempArray = new ArrayList<Integer>();
+        
+       // O(n)
+        
+        ArrayList<Integer> tempArray = new ArrayList<Integer>();
         
         for(int i =0;i<nums.length;i++){
             
@@ -17,9 +20,11 @@ class Solution {
             smallerNumbers[i] = tempArray.indexOf(nums[i]);
         }
     
-        return smallerNumbers;*/
+        return smallerNumbers;
         
-        int [] smallerNumbers = new int[nums.length];
+        
+        //O(n^2)
+       /* int [] smallerNumbers = new int[nums.length];
         int counter = 0;
         
         for(int i =0;i<nums.length;i++){
@@ -37,6 +42,6 @@ class Solution {
             
         }
         
-        return smallerNumbers;
+        return smallerNumbers;*/
     }
 }
