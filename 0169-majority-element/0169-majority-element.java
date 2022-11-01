@@ -1,9 +1,8 @@
 class Solution {
     public int majorityElement(int[] nums) {
-              
-      //  Arrays.sort(nums);
-        
-        int major= nums[0];
+             
+        //O(n)
+       /* int major= nums[0];
         int count = 1;
         
         for(int i=1;i<nums.length;i++){
@@ -20,7 +19,9 @@ class Solution {
             }
         }
         
-        return major;
-            //nums[(nums.length -1)/2];
+        return major;*/
+        
+         Arrays.sort(nums);
+        return nums[(nums.length -1)/2];
     }
 }
