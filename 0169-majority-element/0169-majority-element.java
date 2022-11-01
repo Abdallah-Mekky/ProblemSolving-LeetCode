@@ -30,6 +30,6 @@ class Solution {
         
         Arrays.sort(nums);
         
-        return nums[(nums.length -1)/2];
+        return nums[(nums.length)/2];
     }
 }
