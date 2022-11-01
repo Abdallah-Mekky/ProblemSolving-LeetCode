@@ -21,7 +21,8 @@ class Solution {
         
         return major;*/
         
-         Arrays.sort(nums);
+        
+        Arrays.sort(nums);
         return nums[(nums.length -1)/2];
     }
 }
