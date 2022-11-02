@@ -1,7 +1,7 @@
 class Solution {
     public boolean isPalindrome(String s) {
         
-        //String reversedWord;
+        String reversedWord;
         StringBuilder s1;
         
         if(s == null || s.length() == 0){
@@ -13,11 +13,12 @@ class Solution {
             s = s.replaceAll("[^a-zA-Z0-9]","");
             
              s1 = new StringBuilder(s);
-               //;
+            reversedWord = s1.reverse().toString();
+               
             
         }
         
-        return s.equals(s1.reverse().toString());
+        return s.equals(reversedWord);
         
     }
 }
