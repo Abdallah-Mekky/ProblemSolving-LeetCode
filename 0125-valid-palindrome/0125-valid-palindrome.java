@@ -20,6 +20,7 @@ class Solution {
         }  
         }
         
-        return s.equals(reversedWord);   
+        return s.equals(reversedWord);
+       
     }
 }
