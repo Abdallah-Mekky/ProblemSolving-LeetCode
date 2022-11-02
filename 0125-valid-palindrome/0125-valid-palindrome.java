@@ -4,7 +4,13 @@ class Solution {
         String reversedWord;
         StringBuilder s1;
         
-        if(s == null || s.length() == 0){
+        if(s == null){
+            return false;
+        }
+        
+        else{
+          
+            if(s.length() == 0){
             
             return true;
         }else{
@@ -17,6 +23,10 @@ class Solution {
                
             
         }
+            
+        }
+        
+        
         
         return s.equals(reversedWord);
         
