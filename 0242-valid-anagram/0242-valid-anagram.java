@@ -13,10 +13,10 @@ class Solution {
             return false;
         }
         
-        s = sortString(s);
-        t = sortString(t);
+        String sort1 = sortString(s);
+        String sort2 = sortString(t);
          
-        return s.equals(t);
+        return sort1.equals(sort2);
     }
     
     public String sortString(String s){
