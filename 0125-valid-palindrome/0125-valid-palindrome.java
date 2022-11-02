@@ -8,20 +8,15 @@ class Solution {
             return false;
         }
         
-        else{
-          
-            if(s.length() == 0){
+        if(s.length() == 0){
             
-            return true;
-        }else{
-            
-            s = s.toLowerCase().replaceAll("[^a-zA-Z0-9]","");
+            return true;}
+        
+         
+             s = s.toLowerCase().replaceAll("[^a-zA-Z0-9]","");
              s1 = new StringBuilder(s);
-            reversedWord = s1.reverse().toString();   
-        }   
-        }
-        
-        
+             reversedWord = s1.reverse().toString();   
+       
         
         return s.equals(reversedWord);
         
