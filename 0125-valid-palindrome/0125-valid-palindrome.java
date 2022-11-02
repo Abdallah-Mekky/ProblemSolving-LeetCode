@@ -10,7 +10,7 @@ class Solution {
         
         else{
           
-            if(s.length() == 0){
+            if(s.isEmpty()){
             
             return true;
         }else{
