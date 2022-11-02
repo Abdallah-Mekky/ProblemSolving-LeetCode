@@ -13,10 +13,6 @@ class Solution {
             return false;
         }
         
-        if(s.length() == 0 && t.length() == 0){
-            return true;
-        }
-        
         s = sortString(s);
         t = sortString(t);
          
