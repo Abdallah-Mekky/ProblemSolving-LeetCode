@@ -16,11 +16,17 @@ class Solution {
         }else{
             
             s = s.toLowerCase().replaceAll("[^a-zA-Z0-9]","");;
-            reversedWord = new StringBuilder(s).reverse().toString();   
-        }  
+            
+            
+             s1 = new StringBuilder(s);
+            reversedWord = s1.reverse().toString();   
+        }
+            
         }
         
+        
+        
         return s.equals(reversedWord);
-       
+        
     }
 }
