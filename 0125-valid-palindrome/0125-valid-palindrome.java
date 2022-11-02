@@ -18,8 +18,7 @@ class Solution {
             s = s.toLowerCase().replaceAll("[^a-zA-Z0-9]","");
              s1 = new StringBuilder(s);
             reversedWord = s1.reverse().toString();   
-        }
-            
+        }   
         }
         
         
