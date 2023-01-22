@@ -14,26 +14,7 @@ class Solution {
             
             targetArray[i] = tempArray.get(i);
         }
-        
-       
-        
-        
-//         for(int i = 0;i<targetArray.length;i++){
-            
-//           if( targetArray[index[i]] > 0){
-              
-//               for(int j = i;j<targetArray.length;j++){
-                  
-//                   int temp =  targetArray[index[i]];
-//               targetArray[index[i]] = nums[i];
-//               targetArray[index[i] + 1] = temp;}
-//               }
-              
-//             else{
-//               targetArray[index[i]] = nums[i];
-//           }  
-              
-//           }
+  
           return targetArray;  
     }    
         }
