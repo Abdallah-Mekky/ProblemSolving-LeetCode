@@ -24,7 +24,7 @@ class Solution {
                 s.append(address.charAt(i));
             }
         }
-        return String.valueOf(s);
+        return s.toString();
         
         
       //  return s;
