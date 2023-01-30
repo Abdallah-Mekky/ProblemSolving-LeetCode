@@ -16,12 +16,15 @@ class Solution {
             if(s.charAt(i) != ' '){
              sizeOfLastWord++;
                 
+                
+                //To Handling all cases but not handle case string with one word 
                 if(s.charAt(i - 1) == ' ' ){
                 
                        break;   
                 }
              
-                else if(i == 1 && s.charAt(0) != ' '){
+                //To Handling only one case string with one word
+                else if(i == 1){
                    
                        sizeOfLastWord++;
             }
