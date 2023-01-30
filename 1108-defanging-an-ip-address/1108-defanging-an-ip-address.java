@@ -1,6 +1,7 @@
 class Solution {
     public String defangIPaddr(String address) {
        
+        //Soultion 1
 //         String s = "";
         
 //         for(int i = 0 ;i<address.length();i++){
@@ -14,19 +15,24 @@ class Solution {
 //             }
 //         }
         
-        StringBuilder s =new StringBuilder();
-        for(int i = 0 ; i <address.length() ;i++ ){
-            if(address.charAt(i)=='.') 
+        //Soultion 2
+        //return address.replace(".","[.]");
+        
+        //Soultion 3
+        StringBuilder IP =new StringBuilder();
+        for(int i = 0 ; i <address.length();i++){
+            
+            if(address.charAt(i) == '.') 
             {
-                s.append("[.]");
+                IP.append("[.]");
             }
             else{
-                s.append(address.charAt(i));
+                IP.append(address.charAt(i));
             }
         }
-        return s.toString();
+        return IP.toString();
         
         
-      //  return s;
+
     }
 }
