@@ -5,13 +5,13 @@ class Solution {
         
         for(int i = 0;i<jewels.length();i++){
             
-            char currentJewel = jewels.charAt(i);
+           // char currentJewel = ;
             
             for(int j = 0;j<stones.length();j++){
                 
-                 char currentStone = stones.charAt(j);
+                // char currentStone = ;
                 
-                if(currentJewel == currentStone){
+                if(jewels.charAt(i) == stones.charAt(j)){
                     
                     sumOfJewelsInStones++;
                     
