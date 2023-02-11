@@ -17,7 +17,8 @@ class Solution {
     //get the index from each word 
     numOfWord = 
         Integer.valueOf(wordsOfSentence[i].substring(wordsOfSentence[i].length() - 1));
-                
+        
+            
     orderedSentence[numOfWord - 1] =
         wordsOfSentence[i].substring(0,wordsOfSentence[i].length() - 1);    
         }
