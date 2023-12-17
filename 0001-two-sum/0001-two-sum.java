@@ -1,24 +1,18 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        
-        int [] myIndices = new int[2];
-        
-        
-        for(int i = 0;i<nums.length -1 ;i++){
+        for (int i = 0;i<nums.length;i++){
             
-            for(int j = i+1;j < nums.length ;j++){
+            for (int j = i+1;j<=nums.length-1;j++){
                 
-                
-                 if((nums[i] + nums[j]) == target){
+                int temp = nums[i] + nums[j];
                     
-                  myIndices[0] = i;
-                  myIndices[1] = j;  
-                  break;
-                }
-               
+                    if (temp == target){
+                        return new int[]{i,j};
+                    }
             }
+            
         }
         
-        return myIndices;
+        return null;
     }
 }
